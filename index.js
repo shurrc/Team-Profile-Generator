@@ -68,6 +68,9 @@ const html =
     <title>Team-Profile</title>
 </head>
 <body>
+<div class="container-fluid bg-danger text-center text-white ">
+<h1>My Team</h1>
+</div>  
     <div class= "row justify-content-center">
    ${employeesList.map(employee => createCard(employee)).join('')} 
    </div>
@@ -98,7 +101,7 @@ function createCard(employee) {
         }
     const card = `
     <div class="card col-4" style="width: 18rem;">
-  <div class="card-body">
+  <div class="card-body bg-primary text-white">
     <h5 class="card-title">${employee.name}</h5>
     <p class="card-text">${employee.getRole()}</p>
   </div>
